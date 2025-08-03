@@ -1845,3 +1845,118 @@ section,
 .footer {
   font-size: 16px;
 }
+/* Responsive Heading & Subtext for About Page */
+@media (max-width: 600px) {
+  .page-title-heading {
+    font-size: 35px !important;
+    line-height: 1.1 !important;
+    word-break: break-word !important;
+    text-align: center !important;
+  }
+  .resume-subtext,
+  .page-title .resume-subtext {
+    font-size: 19px !important;
+    line-height: 1.3 !important;
+    word-break: break-word !important;
+    text-align: center !important;
+    white-space: normal !important;
+    display: block !important;
+    width: 100% !important;
+    padding: 0 5px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+/* --- Make Portfolio Filter Bar Scrollable on Mobile --- */
+@media (max-width: 768px) {
+  .portfolio-filters {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+    gap: 10px !important;
+    padding-bottom: 8px !important;
+    margin-bottom: 10px !important;
+    /* Hide scrollbar for webkit browsers */
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent-color) transparent;
+  }
+  .portfolio-filters li {
+    flex: 0 0 auto !important;
+    font-size: 15px !important;
+    padding: 8px 20px !important;
+    margin: 0 !important;
+    border-radius: 20px !important;
+    min-width: max-content !important;
+  }
+  .portfolio-filters::-webkit-scrollbar {
+    height: 5px;
+    background: transparent;
+  }
+  .portfolio-filters::-webkit-scrollbar-thumb {
+    background: var(--accent-color);
+    border-radius: 2.5px;
+  }
+}
+@media (max-width: 768px) {
+  section#portfolio .container,
+  section#portfolio .container-fluid,
+  section#portfolio .isotope-layout {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100vw !important;
+    max-width: 100vw !important;
+  }
+  section#portfolio .portfolio-filters {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    white-space: nowrap !important;
+    gap: 2px !important;
+    border-radius: 32px !important;
+    width: 100% !important;
+    min-width: 420px !important;       /* <<-- Ensures it's never too small */
+    max-width: 440px !important;       /* <<-- Make this wider for a "fatter" pill */
+    margin: 0 auto 32px auto !important;
+    box-sizing: border-box !important;
+    background: var(--surface-color, #1a1a1a) !important;
+    padding-left: 24px !important;     /* Slightly more left/right padding */
+    padding-right: 24px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    justify-content: center !important;
+    overflow: visible !important;
+    position: relative;
+  }
+  section#portfolio .portfolio-filters li {
+    flex: 0 0 auto !important;
+    min-width: max-content !important;
+    padding: 8px 20px !important;
+    margin: 0 !important;
+    border-radius: 20px !important;
+    font-size: 15px !important;
+  }
+}
+.home-mobile-label.sitename {
+  display: none;
+  position: absolute;
+  top: -5px;
+  left: 18px;
+  color: #fff;
+  font-size: 30px;        /* Start with 30px, or increase as needed */
+  font-weight: 800;
+  z-index: 9999;
+  letter-spacing: 0.5px;
+  background: transparent;
+  font-family: var(--heading-font);
+  text-shadow: 0 1px 6px rgba(0,0,0,0.13);
+}
+
+@media (max-width: 768px) {
+  .home-mobile-label.sitename {
+    display: block;
+  }
+}
+
+
+
+
