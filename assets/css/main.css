@@ -1189,7 +1189,7 @@ section,
 /* CERTIFICATIONS TIMELINE STYLES */
 .cert-timeline {
   position: relative;
-  padding-left: 60px;
+  padding-left: 30px;
 }
 
 .cert-timeline::before {
@@ -1197,7 +1197,7 @@ section,
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 26px; /* aligns with center of dot */
+  left: -4px; /* aligns with center of dot */
   width: 4px;
   background-color: var(--accent-color);
   z-index: 0;
@@ -1205,7 +1205,7 @@ section,
 
 .cert-item {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .cert-dot {
@@ -1956,7 +1956,13 @@ section,
     display: block;
   }
 }
-
-
-
+.edu-content h5 span,
+.resume-item h5 {
+  background: #0d6efd;  /* Bootstrap primary blue */
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
 
