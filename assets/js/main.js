@@ -96,7 +96,7 @@
   const typedLogo = document.querySelector('#typed-logo');
   if (typedLogo) {
     new Typed('#typed-logo', {
-      strings: ["Data Analyst", "Data Scientist","Business Analyst", "Data Engineer"],
+      strings: ["Analytics Engineer", "Data Engineer","Data Analyst", "Data Scientist"],
       loop: true,
       typeSpeed: 60,
       backSpeed: 30,
